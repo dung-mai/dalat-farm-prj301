@@ -1,0 +1,66 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Jun 10, 2022, 4:53:23 PM
+    Author     : Admin
+*/
+
+.pagger button[type="submit"]{
+    text-decoration: none;
+    color: green;
+    font-size: 16px;
+    padding: 5px 10px;
+    margin: 0px 3px;
+    background: whitesmoke;
+    font-weight: 500;
+    border-radius: 5px;
+    border: 1px #ccc solid;
+}
+
+.pagger button:hover,
+.pagger button:active{
+    background: #9ea1a2;
+}
+
+.pagger button {
+    border-radius: 5px;
+    background: #6abd89;
+    color: #f1f1f1;
+    border: none;
+    padding: 5px 10px;
+    margin: 0px 3px;
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px #ccc solid;
+}
+
+.paging-product-list form {
+    width: 100%;
+    display: flex;
+    vertical-align: center;
+    margin: 30px 20px 40px;
+}
+
+.pagger {
+    display: inline-block;
+    display: block;
+    margin: 0 auto;
+}
+
+.nrpp {
+    display: inline-block;
+}
+
+.nrpp>*{
+    display: inline-block;
+    line-height: 2;
+    font-size: 16px;
+}
+
+.nrpp select{
+    display: inline-block;
+    padding: 3px 10px;
+}
+

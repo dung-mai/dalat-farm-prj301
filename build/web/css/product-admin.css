@@ -1,0 +1,108 @@
+/* MAIN CONTENT */
+.content-main {
+    padding: 30px 3%;
+}
+
+.content-body {
+    background-color: #fff;
+}
+
+/* header */
+.content-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-header h2 {
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+
+/* main content */
+.category-filter {
+    padding: 20px;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.category-filter form {
+    display: flex;
+    justify-content: right;
+}
+
+/* .category-filter select {
+    
+} */
+
+/* Product list */
+.product-list {
+    line-height: 1.5;
+    flex: 1 1 auto;
+    padding: 1.3rem 1.3rem;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: left;
+    width: 100%;
+}
+
+table tr {
+    border-bottom: 1px solid #adb5bd;
+    /* display: flex;
+    flex-direction: row; */
+}
+
+table tr:hover {
+    background-color: rgba(49, 103, 235, 0.075);
+}
+
+table td,
+table th {
+    padding: 0.5rem 0.4rem;
+}
+
+table th {
+    font-size: 17px;
+    padding-left: 10px;
+}
+
+table .text-end {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table .product {
+    display: flex;
+    align-items: center;
+}
+
+table td img {
+    width: 60px;
+    height: 60px;
+    padding: 0.25rem;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    box-shadow: 0 0.1rem 0.25rem rgb(0 0 0 / 8%);
+    margin-right: 10px;
+}
+
+.btn-light {
+    background-color: #f1f1f1;
+    color: #5f6060;
+    margin-right: 8px;
+}
+
+.btn-edit {
+    background-color: green;
+    color: #fff;
+    margin-right: 8px;
+}
+
+.btn-delete {
+    background-color: red;
+    color: #fff;
+    margin-right: 8px;
+}

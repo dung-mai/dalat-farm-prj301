@@ -1,0 +1,103 @@
+.content-body {
+    background-color: #fff;
+}
+
+/* header */
+.content-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-header h2 {
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+/* ffdsaad */
+
+
+.content-main {
+    max-width: 720px;
+    padding: 30px 3%;
+    margin: 0 auto;
+}
+
+.edit-account{
+    max-width: 100%;
+}
+
+.btn-outline-danger {
+    background-color: rgb(207, 91, 91);
+    color: #fff;
+    padding: 0.5rem 0.75rem;
+}
+
+/* FORM
+------------- */
+.add-form {
+    padding: 1.3rem 1.3rem;
+}
+
+.form-label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+}
+
+.form-control {
+    display: block;
+    width: calc(100% - 30px);
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #141432;
+    background-color: #fff;
+    border: 1px solid #cfdbe6;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.form-item {
+    margin-bottom: 1.5rem;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.form-item-2 {
+    grid-column: 1 / span 2;
+}
+
+.form-row-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.btn-primary {
+    font-size: 1rem;
+}
+
+.message {
+    background-color: #e9f3e8;
+    color: green;
+    font-size: 18px;
+    line-height: 28px;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+
+.danger{
+    background-color: #fbe7e7;
+    color: red;
+}
+
+.avatar-input img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 1px solid gainsboro;
+}

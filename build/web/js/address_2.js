@@ -1,0 +1,79 @@
+/* 
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/JavaScript.js to edit this template
+ */
+/* 
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/JavaScript.js to edit this template
+ */
+var citis = document.getElementById("city");
+var districts = document.getElementById("district");
+var wards = document.getElementById("ward");
+
+var citisvalue = document.getElementById("cityvalue");
+var districtsvalue = document.getElementById("districtvalue");
+var wardsvalue = document.getElementById("wardvalue");
+
+var Parameter = {
+    url: "../../resource/data.json", //Đường dẫn đến file chứa dữ liệu hoặc api do backend cung cấp
+    method: "GET", //do backend cung cấp
+    responseType: "application/json" //kiểu Dữ liệu trả về do backend cung cấp
+};
+//gọi ajax = axios => nó trả về cho chúng ta là một promise
+var promise = axios(Parameter);
+//Xử lý khi request thành công
+promise.then(function (result) {
+    renderCity(result.data);
+});
+
+function renderCity(data) {
+    for (const x of data) {
+        citis.options[citis.options.length] = new Option(x.Name, x.Name);
+    }
+
+    for (let i = 0; i < citis.options.length; i++) {
+        if (citis.options[i].value === citisvalue)
+            citis.options[i].selected = true;
+    }
+
+    // xứ lý khi thay đổi tỉnh thành thì sẽ hiển thị ra quận huyện thuộc tỉnh thành đó
+    citis.onclick = function () {
+        district.length = 1;
+        ward.length = 1;
+        if (this.value != "") {
+            const result = data.filter(n => n.Name === this.value);
+
+            for (const k of result[0].Districts) {
+                district.options[district.options.length] = new Option(k.Name, k.Name);
+            }
+
+            for (let i = 0; i < district.options.length; i++) {
+                if (district.options[i].value === districtvalue)
+                    district.options[i].selected = true;
+            }
+        }
+    };
+
+    // xứ lý khi thay đổi quận huyện thì sẽ hiển thị ra phường xã thuộc quận huyện đó
+    district.onclick = function () {
+        ward.length = 1;
+        const dataCity = data.filter((n) => n.Name === citis.value);
+        if (this.value != "") {
+            const dataWards = dataCity[0].Districts.filter(n => n.Name === this.value)[0].Wards;
+
+            for (const w of dataWards) {
+                wards.options[wards.options.length] = new Option(w.Name, w.Name);
+            }
+            
+            for (let i = 0; i < ward.options.length; i++) {
+                if (ward.options[i].value === wardvalue)
+                    ward.options[i].selected = true;
+            }
+
+        }
+    };
+}
+
+
+
+

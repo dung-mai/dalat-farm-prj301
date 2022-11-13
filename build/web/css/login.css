@@ -1,0 +1,284 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+:root {
+    --clr-1: #92ef4b;
+}
+
+input:focus {
+    outline: none;
+    box-shadow:
+        3px 5px 10px rgb(40 50 60 / 60%);
+}
+
+input:hover {
+    cursor: pointer;
+    outline: none;
+}
+
+.icon {
+    font-size: small;
+}
+
+/*  */
+
+body {
+    background-color: bisque;
+}
+
+.login-page {
+    background-color: #fff;
+    width: 320px;
+    margin: 50px auto 0;
+    /* border: 1px solid black; */
+    padding: 35px 20px 35px 35px;
+    box-shadow:
+        3px 5px 10px rgb(0 0 0 / 40%);
+}
+
+.register-page {
+    background-color: #fff;
+    width: 320px;
+    margin: 50px auto 0;
+    /* border: 1px solid black; */
+    padding: 35px 20px 35px 35px;
+    box-shadow:
+        3px 5px 10px rgb(0 0 0 / 40%);
+}
+
+.welcome-massage>span {
+    text-align: center;
+    display: block;
+    font-size: 26px;
+    font-weight: bold;
+    margin: 10px 0 30px;
+}
+
+.alert {
+    display: none;
+    background-color: #f3e8e9;
+    color: red;
+    font-size: 14px;
+    line-height: 24px;
+    position: relative;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+
+.alert .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    padding: 0.75rem 1.25rem;
+    color: inherit;
+}
+
+/* FORM */
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group-box {
+    /* border-bottom: solid 1px rgb(139, 172, 102); */
+    padding: 0 5px;
+}
+
+.form-group-box input {
+    margin-left: 5px;
+    font-size: 14px;
+    line-height: 1.5;
+    border: none;
+    height: 35px;
+    width: 230px;
+    padding: 6px 5px;
+}
+
+.form-group-box::after {
+    content: '';
+    display: block;
+    width: 285px;
+    border-bottom: solid 1px rgb(139, 172, 102);
+}
+
+/*  */
+.remember-me {
+    display: inline-block;
+}
+
+.remember-me span {
+    font-size: 14px;
+}
+
+.forgot-password {
+    display: inline-block;
+    margin-left: 70px;
+}
+
+.forgot-password a {
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.sign-in-button {
+    color: rgb(244, 244, 244);
+    background-color: rgb(175, 150, 35);
+    cursor: pointer;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    min-width: 190px;
+    width: 100%;
+    max-width: 300px;
+    height: 48px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+    /* text-transform: capitalize; */
+    border: none;
+    border-radius: 4px;
+    margin: 20px 0 35px;
+    transition: 0.15s;
+}
+
+.sign-in-button:hover {
+    transform: scale(1.005);
+
+    box-shadow: 0px 3px 3px rgb(0 0 0 / 40%);
+}
+
+
+/* SIGN IN BY GOOGLE, FACEBOOK */
+.sign-in-others-button a {
+    border-radius: 3%;
+    display: inline-block;
+    color: rgb(247, 247, 247);
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+    background: #ff6363;
+    box-shadow:
+        0px 2px 2px rgb(0 0 0 / 40%);
+}
+
+.sign-in-others-button a:first-child {
+    background: rgb(24, 29, 180);
+}
+
+
+.sign-in-others-button i {
+    padding: 3px 10px 3px 5px;
+}
+
+.sign-in-others {
+    text-align: center;
+}
+
+.sign-in-others-button a:hover {
+    transform: scale(1.01);
+    box-shadow: 0px 3px 5px rgb(0 0 0 / 50%);
+    font-weight: 600;
+}
+
+
+
+/* fd */
+.button-ex {
+    width: 80%;
+    height: 200px;
+    margin: 50px auto;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-ex a {
+    display: block;
+    font-size: 24px;
+    padding: 5px 40px;
+    background: transparent;
+    border: 1.5px solid rgb(211, 200, 200);
+    color: #fff;
+    letter-spacing: 0.15em;
+    scroll-behavior: smooth;
+    transition: ease 0.5s;
+}
+
+.button-ex span {
+    display: block;
+}
+
+.button-ex span::before {
+    content: '';
+    display: block;
+    position: relative;
+    width: 14px;
+    height: 10px;
+    bottom: 13px;
+    left: 0;
+    background: black;
+    border: 2px solid rgb(246, 238, 238);
+    color: #fff;
+    transition: 0.5s;
+
+}
+
+.button-ex span::after {
+    content: '';
+    display: block;
+    position: relative;
+    width: 14px;
+    height: 10px;
+    top: 13px;
+    left: 100px;
+    background: black;
+    border: 2px solid #eee;
+    color: #fff;
+    transition: 0.5s;
+
+}
+
+.button-ex a:hover {
+    background: transparent;
+    color: #bff44c;
+    border: 2.5px solid var(--clr-1);
+    box-shadow: 0 0 45px var(--clr-1);
+    transform: scale(1.02);
+}
+
+.button-ex a:hover span::after {
+    transform: translateX(-600%);
+    border-color: var(--clr-1);
+}
+
+.button-ex a:hover span::before {
+    transform: translateX(600%);
+    border-color: var(--clr-1);
+
+}
+
+.or-create-new-account {
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+
+
+/*Trang ÐANG kY*/
+
+.register-page {
+    background-color: #fff;
+    width: 320px;
+    margin: 50px auto 0;
+    /* border: 1px solid black; */
+    padding: 35px 20px 35px 35px;
+    box-shadow:
+        3px 5px 10px rgb(0 0 0 / 40%);
+}
